@@ -1,0 +1,110 @@
+body{
+  color:white;
+  background-color: #b32aa8;
+  margin: 0;
+  padding: 0;
+}
+.App{
+  height: 100vh;
+  width: 100%;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+  background-size: cover;
+  background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)); /*-Source for color: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}   
+
+main,footer,header{
+  background-color: #b32aa8;
+
+}
+
+/* Nav Bar Menu  */
+nav {
+  background-color: #920886;
+}
+.nav-link:hover{
+  cursor: pointer;
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+.logo{
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
+}
+
+/* Features Dropdown menu */
+.dropdown-toggle{
+  background-color: #b32aa8;
+  border: solid white 1px;
+}
+.dropdown-menu{
+  background-color: #920886;
+}
+.dropdown-menu > .dropdown-item {
+  color: white;
+}
+.dropdown-item:hover{
+  background-color: #b32aa8;
+}
+
+/* Feature Cards */
+
+.card{
+  border: none;
+}
+.card-img-overlay{
+  background-color: rgba(24, 23, 23, 0.394);
+}
+.card:hover{
+  cursor: pointer;
+}
+.card-img{
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.background{
+  background-color: #b32aa890;
+  border-radius: 8px;
+  border:none;
+  width: fit-content;
+  padding: 1rem;
+}
+footer{
+ background-color:  #920886;
+ height: 200px;
+}
+.modal-content{
+  background-color:  #920886;
+}
+
+.title-container-modal {
+  width: 100%;
+}
+#currency-sign,#usd,#custom-donation{
+  background-color: white;
+  border: none;
+}
+#usd{
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+@media screen and (max-width:1200px){
+  #cards-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+ .card-size {
+      width: 80%;
+  }
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
