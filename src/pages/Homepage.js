@@ -1,11 +1,20 @@
-import React from "react";
-import { Card, CardImg, CardImgOverlay, CardText, CardTitle, Col, Container, Row } from "reactstrap";
+import React, { useEffect, useState } from "react";
+import { Col, Container, Row } from "reactstrap";
 import NavMenu from "../components/NavMenu";
-import MeditationImg from "../app/assets/img/features/meditation.jpg"
-import MeditationMusicImg from "../app/assets/img/features/music-headphones.jpg"
-import MeditationTimerImg from "../app/assets/img/features/timer.jpg"
+import { json } from "react-router-dom";
+import FeaturesList from "../features/FeaturesList/FeaturesList";
 
 const Homepage = () => {
+    const [features, setFeatures] = useState('')
+    useEffect(() => {
+        fetch('http://localhost:8000/featureCards')
+            .then(response => {
+                return response.json()
+            })
+            .then(data=>{
+                setFeatures(data)
+            })
+    },[])
     return(
         <main>
             <NavMenu/>
@@ -20,7 +29,8 @@ const Homepage = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container id="bottom-homepage"className="pb-5">
+            {features && <FeaturesList features ={features}/>}
+            {/* <Container id="bottom-homepage"className="pb-5">
                 <Row>
                     <Col>
                         <h3 className="text-center display-6">Our Features</h3>
@@ -56,7 +66,7 @@ const Homepage = () => {
                         </Card>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
         </main>
     );
 };
