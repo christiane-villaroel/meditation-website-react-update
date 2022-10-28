@@ -4,8 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
-import { store } from './app/store';
 import App from './App';
 import './index.css';
 
@@ -14,11 +12,9 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Provider>
   </React.StrictMode>
 );
 

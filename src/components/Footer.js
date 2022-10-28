@@ -12,7 +12,7 @@ const Footer = () =>{
     };
 
     return (
-        <footer>
+        <footer className="footer">
             <Container className="container-fluid">
                 <Row className="row pt-md-2 align-bottom text-center" >
                     <Col className="col-12 align-self-center mt-3" >

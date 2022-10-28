@@ -1,0 +1,20 @@
+{
+    "featureCards": [
+        {
+            "title":"Guided Meditations",
+            "description":"10 minute Guided Audio & Video Meditation",
+            "id":1
+        },
+        {
+            "title":"Mediation Music",
+            "description":"Access to Free Music to listen to aid in you're meditation.",
+            "id":2
+        },
+        {
+            "title":"Mediation Timer",
+            "description":"A Self paced Meditation Timer that can be adjusted to fit you're busy schedule.",
+            "id":3
+        
+        }
+    ]
+}
