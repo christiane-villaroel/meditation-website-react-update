@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
-import mindfulLogo from "../app/assets/img/mindfulLogo.svg";
 const NavMenu = ()=>{
     const [isOpen,setIsOpen] = useState(false)
     const toggle = () => setIsOpen(!isOpen)
@@ -10,7 +9,7 @@ const NavMenu = ()=>{
         <div>
             <Navbar className="navbar-expand-md">
                 <NavbarBrand className="d-inline-block align-text-center text-white" href="/">
-                    <img src={mindfulLogo} style={{height:30}} className="me-2 logo" alt="logo"/>
+                    {/* ADD IMG <img src={mindfulLogo} style={{height:30}} className="me-2 logo" alt="logo"/> */}
                     Mindful
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle}/>

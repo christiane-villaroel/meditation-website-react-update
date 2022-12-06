@@ -3,18 +3,12 @@ import { Col, Container, Row } from "reactstrap";
 import NavMenu from "../components/NavMenu";
 import { json } from "react-router-dom";
 import FeaturesList from "../features/FeaturesList/FeaturesList";
+import useFetch from "../useFetch";
 
 const Homepage = () => {
-    const [features, setFeatures] = useState('')
-    useEffect(() => {
-        fetch('http://localhost:8000/featureCards')
-            .then(response => {
-                return response.json()
-            })
-            .then(data=>{
-                setFeatures(data)
-            })
-    },[])
+  
+    const {data,error,isLoading} = useFetch(`http://localhost:8000/featureCards`);
+    
     return(
         <main>
             <NavMenu/>
@@ -29,7 +23,7 @@ const Homepage = () => {
                     </Col>
                 </Row>
             </Container>
-            {features && <FeaturesList features ={features}/>}
+            {/* {features && <FeaturesList features ={features}/>} */}
             {/* <Container id="bottom-homepage"className="pb-5">
                 <Row>
                     <Col>

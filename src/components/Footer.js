@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button,ButtonGroup, Modal, ModalBody, ModalHeader, ModalFooter,Form,FormGroup,Input, InputGroup, InputGroupText } from "reactstrap";
-import mindfulLogo from "../app/assets/img/mindfulLogo.svg"
 
 const Footer = () =>{
     /* useState to update modal function from true to false */
@@ -21,7 +20,7 @@ const Footer = () =>{
                         {/* Reactstrap Modal Body */}
                         <Modal isOpen={isOpen}onRequestClose={toggleModal}>
                             <ModalHeader className="d-flex flex-column">
-                                <img src={mindfulLogo} className="logo" alt="logo"/>
+                                {/* ADD LOGO <img src={mindfulLogo} className="logo" alt="logo"/> */}
                                 <h5>Free Minds</h5>
                             </ModalHeader>
                             <ModalBody>
