@@ -26,5 +26,10 @@ The Secondary goal of this website is to also inform the user about the benefits
 - Custom Fetch Hook:
   - Set up json-server to create fake server and created fetch request to server
   - Since fetch request is a side effect in react I used the useEffect Hook to tell react when to re-render when fetch request is made.
-  - create a separate component just to make fetch request, further down the line I can update and use the custom hook to make fetch request's in other react components by importing <useFetch> component and
-    passing the specifil url end point as a parameter to the useFetch hook.
+  - create a separate component just to make fetch request, further down the line I can update and use the custom hook to make fetch request's in other react components by importing <useFetch> component and passing the specific url end point as a parameter to the useFetch hook.
+
+### 12/24/22
+
+- Features Page Json Server Public Folder:
+  - Moved Images/assets folders to public folder and corrected file path in mx.json file for each image to localhost:3000 followed by path to image.
+  - Currently working on react strap card image display, to be responsive when display images on small screen.

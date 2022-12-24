@@ -7,7 +7,7 @@ import useFetch from "../useFetch";
 
 const Homepage = () => {
   
-    const {data,error,isLoading} = useFetch(`http://localhost:8000/featureCards`);
+    const {data:features,error,isLoading} = useFetch(`http://localhost:8000/featureCards`);
     
     return(
         <main>
@@ -23,7 +23,7 @@ const Homepage = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* {features && <FeaturesList features ={features}/>} */}
+             {features && <FeaturesList features ={features}/>} 
             {/* <Container id="bottom-homepage"className="pb-5">
                 <Row>
                     <Col>
