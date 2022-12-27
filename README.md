@@ -33,3 +33,11 @@ The Secondary goal of this website is to also inform the user about the benefits
 - Features Page Json Server Public Folder:
   - Moved Images/assets folders to public folder and corrected file path in mx.json file for each image to localhost:3000 followed by path to image.
   - Currently working on react strap card image display, to be responsive when display images on small screen.
+
+### 12/26/22
+
+- ## Header Component:
+  - Added img tage with src to localhost3000 for logo.
+- ## Feature Image
+  - Removed lg <Col> attribute and deleted css card width.
+  - Added 90% width to .card-width className for max-width:1200px

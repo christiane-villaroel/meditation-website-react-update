@@ -100,8 +100,8 @@ nav {
       flex-direction: column;
       align-items: center;
   }
- .card-size {
-      width: 80%;
+  .card-size{
+    width: 90%;
   }
 }
 @media screen and (min-width: 1500px) {

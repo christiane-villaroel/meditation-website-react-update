@@ -1,7 +1,11 @@
-import {  Button } from "reactstrap";
+
 import React from "react";
+import useFetch from "../useFetch";
 
 const Header = () =>{
+    const {data,error,isLoading} = useFetch(`http://localhost:8000/icons`) 
+   
+    console.log(data,"logo")
     return (
        <header className="container-fluid py-f jumbotron">
             <div className="container">
@@ -13,7 +17,8 @@ const Header = () =>{
                 </div>
                 <div className="col-3 ml-md-4">
                     <a href="#index.html" >
-                    {/*ADD LOGO <img src={mindfulLogo} className="img-fluid logo" alt="logo" style={{ width:"250px"}}/> */}
+                    
+                     <img src="http://localhost:3000/assets/images/mindfulLogo.svg" className="img-fluid logo" alt="logo" style={{ width:"250px"}}/>
                     </a>
                 </div>
            </div>

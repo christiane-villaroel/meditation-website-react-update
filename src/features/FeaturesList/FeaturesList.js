@@ -1,6 +1,5 @@
 import React from "react";
-import finalPropsSelectorFactory from "react-redux/es/connect/selectorFactory";
-import { Card, CardImg, CardImgOverlay, CardText, CardTitle, Col, Container, Row } from "reactstrap";
+import { Card, CardImg, CardImgOverlay, CardText, CardTitle, Col, Container} from "reactstrap";
 /* import MeditationImg from "../../app/assets/img/features/meditation.jpg"
 import MeditationMusicImg from "../../app/assets/img/features/music-headphones.jpg"
 import MeditationTimerImg from "../../app/assets/img/features/timer.jpg" */
@@ -17,7 +16,7 @@ const FeaturesList  = ({features}) => {
                 const {title,id,description,img} = feature
 
                 return (
-                    <Col lg="4"  className="card-size" key={id} >
+                    <Col className="card-size" key={id} >
                         <Card 
                             className="text-center text-white bg-dark mt-2 mt-md-0 mx-md-3"
                             >
