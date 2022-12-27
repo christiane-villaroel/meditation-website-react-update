@@ -7,13 +7,19 @@ body{
 .App{
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .jumbotron{
   margin-bottom: 0;
   background-size: cover;
   background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)); /*-Source for color: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}   
+}
+
+main{
+  flex: 1;
+}
 
 main,footer,header{
   background-color: #b32aa8;
@@ -78,6 +84,8 @@ nav {
  padding-top: 30px;
  width: 100%;
  height: 200px;
+ position: relative;
+ bottom: 0;
 }
 .modal-content{
   background-color:  #920886;
@@ -105,11 +113,7 @@ nav {
   }
 }
 @media screen and (min-width: 1500px) {
-    .footer{
-      position: absolute;
-      bottom: 0;
-      height: 300px;
-    }
+    
 }
 
 code {
