@@ -42,8 +42,12 @@ The Secondary goal of this website is to also inform the user about the benefits
   - Removed lg <Col> attribute and deleted css card width.
   - Added 90% width to .card-width className for max-width:1200px
 - ## Footer:
+
   - Deleted CSS for <Footer>(Position Absolute,bottom 0), footer did not
     stay fixed to bottom of webpage for smaller screen width. Footer would move to center of the page
     when page height was smaller than the length.
     - Resolution: added display: flex, flex-direction: column to <app> parent container and
       flex:1 to <Footer> tag.
+
+- ## Fetch Request Component:
+- Add setTimeout() method inside body of useEffect method to mimick fetch request loading method. 3 second delay added to timer to render loading texts.
