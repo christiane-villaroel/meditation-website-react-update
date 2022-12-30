@@ -8,13 +8,12 @@ import Error from "../components/Error";
 
 const Header = () =>{
     const {data:header,error,isLoading} = useFetch(`http://localhost:8000/headerPage`);
-    let headerContent = [header[0].header[0]];
     return (
         <header className="container-fluid py-f jumbotron">
             <Container>
                 {error && <Error/>}
                 {isLoading && <Loading/>}
-                {header && <HeaderContent headerContent={headerContent}/>}
+                {header && <HeaderContent headerContent={header}/>}
             </Container>
         </header>
     );
