@@ -51,3 +51,8 @@ The Secondary goal of this website is to also inform the user about the benefits
 
 - ## Fetch Request Component:
 - Add setTimeout() method inside body of useEffect method to mimick fetch request loading method. 3 second delay added to timer to render loading texts.
+
+## 12/29/22
+
+- ## Hompage Hardcoded Content Update
+  - Hard coded content data removed from <Homepage> component. Entered into mw.json file and used fetch request to retrieve data.

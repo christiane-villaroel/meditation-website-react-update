@@ -1,25 +1,36 @@
-{
-    "featureCards": [
-        {
-            "title":"Guided Meditations",
-            "description":"10 minute Guided Audio & Video Meditation",
-            "img":"http://localhost:3000/assets/images/features/meditation.jpg",
-            "id":1
-        },
-        {
-            "title":"Mediation Music",
-            "description":"Access to Free Music to listen to aid in you're meditation.",
-            "img":"http://localhost:3000/assets/images/features/music-headphones.jpg",
-            "id":2
-        },
-        {
-            "title":"Mediation Timer",
-            "description":"A Self paced Meditation Timer that can be adjusted to fit you're busy schedule.",
-            "img":"http://localhost:3000/assets/images/features/timer.jpg",
-            "id":3
-        
-        }
-    ],
+{   
+   "homePage":[
+    
+       { "aboutUs": [
+            {
+                "title":"Who We Are?",
+                "description":"Free Minds is a non-profit organization whose primary mission is to provide free resources for every day working people.We believe that practicing meditation everyday can help reduce stress and anxiety and in turn improve overall health.",
+                "id":4
+            }
+        ]}, 
+        {"featureCards": [
+            {
+                "title":"Guided Meditations",
+                "description":"10 minute Guided Audio & Video Meditation",
+                "img":"http://localhost:3000/assets/images/features/meditation.jpg",
+                "id":1
+            },
+            {
+                "title":"Mediation Music",
+                "description":"Access to Free Music to listen to aid in you're meditation.",
+                "img":"http://localhost:3000/assets/images/features/music-headphones.jpg",
+                "id":2
+            },
+            {
+                "title":"Mediation Timer",
+                "description":"A Self paced Meditation Timer that can be adjusted to fit you're busy schedule.",
+                "img":"http://localhost:3000/assets/images/features/timer.jpg",
+                "id":3
+            
+            }
+        ]}
+    
+   ],
     "icons":[
         {
             "img":"http://localhost:3000/assets/images/mindfulLogo.svg"

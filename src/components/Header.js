@@ -5,7 +5,6 @@ import useFetch from "../useFetch";
 const Header = () =>{
     const {data,error,isLoading} = useFetch(`http://localhost:8000/icons`) 
    
-    console.log(data,"logo")
     return (
        <header className="container-fluid py-f jumbotron">
             <div className="container">
