@@ -54,5 +54,10 @@ The Secondary goal of this website is to also inform the user about the benefits
 
 ## 12/29/22
 
-- ## Hompage Hardcoded Content Update
+- ## Hompage Hardcoded Content Update:
+
   - Hard coded content data removed from <Homepage> component. Entered into mw.json file and used fetch request to retrieve data.
+
+- ## Header Component Update:
+  - Copy and pasted header content onto json file. Deleting hard coded content from Header.js Component.
+  - Used fetch request to make a GET request for header content data.

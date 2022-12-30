@@ -31,9 +31,13 @@
         ]}
     
    ],
-    "icons":[
-        {
+   "headerPage":[{
+        "header":[
+            {
+            "title":"Take Time to Be Mindful",
+            "description":"Stress and Anxiety play a big role in our every day lives. Take time to relieve that stress",
             "img":"http://localhost:3000/assets/images/mindfulLogo.svg"
-        }
-    ]
+            }
+        ]
+   }]
 }

@@ -1,8 +1,5 @@
 import React from "react";
 import { Card, CardImg, CardImgOverlay, CardText, CardTitle, Col, Container,Row} from "reactstrap";
-/* import MeditationImg from "../../app/assets/img/features/meditation.jpg"
-import MeditationMusicImg from "../../app/assets/img/features/music-headphones.jpg"
-import MeditationTimerImg from "../../app/assets/img/features/timer.jpg" */
 const FeaturesList  = ({features}) => {
     const aboutUs =  features[0].aboutUs;
     const featureCards = features[1].featureCards;
@@ -13,7 +10,7 @@ const FeaturesList  = ({features}) => {
             {aboutUs.map((about)=>{
                 const {title,description,id} = about;
                 return(
-                    <Container id="top-homepage">
+                    <Container id="top-homepage" key={id}>
                         <Row>
                             <Col className="text-center" mt="3" mb="3">
                                 <h3 className="display-4">{title}</h3>
