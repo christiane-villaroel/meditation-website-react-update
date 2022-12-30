@@ -1,24 +1,20 @@
 
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
+import {Container} from "reactstrap";
+import HeaderContent from "./componentConent/HeaderContent";
 import useFetch from "../useFetch";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 
 const Header = () =>{
     const {data:header,error,isLoading} = useFetch(`http://localhost:8000/headerPage`);
-    const headerContent = header[0].header
-
+    let headerContent = [header[0].header[0]];
     return (
         <header className="container-fluid py-f jumbotron">
             <Container>
-                <Row className="justify-content-lg-between justify-content-center">
-                   {headerContent.map((item)=>{
-                    const {title,description} = item;
-                    return(<div>
-                        <h1>{title}</h1>
-                        <p>{description}</p>
-                    </div>)
-                   })}
-                </Row>
+                {error && <Error/>}
+                {isLoading && <Loading/>}
+                {header && <HeaderContent headerContent={headerContent}/>}
             </Container>
         </header>
     );
