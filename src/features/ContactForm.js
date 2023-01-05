@@ -17,9 +17,9 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="formpage-container">
+        <main className="formpage-container">
             <NavMenu/>
-            <h1>Contact Us</h1>
+            <h1 className="text-center">Contact Us</h1>
             <Form className="container" onSubmit={handleSubmit}>
                 <Row className="justify-content-center">
                     <FormGroup className="col-3">
@@ -76,7 +76,7 @@ const ContactForm = () => {
                     </Col>
                 </Row>
             </Form>
-        </div>
+        </main>
     )
 };
 

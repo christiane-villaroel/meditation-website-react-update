@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactForm from './features/ContactForm';
+import TimerPage from './pages/FeaturePages.js/TimerPage';
 function App() {
   
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Homepage />}/>
         <Route path='about' element = {<AboutUsPage/>}/>
         <Route path='contact' element={<ContactForm />}/>
+        <Route path='timer' element={<TimerPage/>}/>
       </Routes>
       <Footer/>
     </div>

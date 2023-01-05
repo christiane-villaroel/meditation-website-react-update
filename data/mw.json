@@ -39,5 +39,8 @@
             "img":"http://localhost:3000/assets/images/mindfulLogo.svg"
             }
         ]
+   }],
+   "logo":[{
+    "img":"http://localhost:3000/assets/images/mindfulLogo.svg"
    }]
 }
