@@ -61,3 +61,11 @@ The Secondary goal of this website is to also inform the user about the benefits
 - ## Header Component Update:
   - Copy and pasted header content onto json file. Deleting hard coded content from Header.js Component.
   - Used fetch request to make a GET request for header content data.
+
+## 01/08/23
+
+- ## About Us Page Update:
+  - Content added to About us page with mission statement and title.
+  - Need to add testimonial with bloquote to bottom of page.
+  - JSon server update with about us page content.
+  - NPM dateFormat installed - use to fomate date of customer reviews.

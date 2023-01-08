@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, CardImg, CardImgOverlay, CardText, CardTitle, Col, Container,Row} from "reactstrap";
 const FeaturesList  = ({features}) => {
     const aboutUs =  features[0].aboutUs;
@@ -33,6 +34,7 @@ const FeaturesList  = ({features}) => {
                     const {title,id,description,img} = feature;
                     return (
                         <Col className="card-size" key={id} >
+                            <Link to='/'>
                             <Card 
                                 className="text-center text-white bg-dark mt-2 mt-md-0 mx-md-3"
                                 >
@@ -42,6 +44,7 @@ const FeaturesList  = ({features}) => {
                                 <CardText>{description}</CardText>
                                </CardImgOverlay>
                             </Card>
+                            </Link>
                         </Col>
                     ) 
                 })}
