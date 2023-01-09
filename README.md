@@ -65,7 +65,16 @@ The Secondary goal of this website is to also inform the user about the benefits
 ## 01/08/23
 
 - ## About Us Page Update:
+
   - Content added to About us page with mission statement and title.
   - Need to add testimonial with bloquote to bottom of page.
   - JSon server update with about us page content.
   - NPM dateFormat installed - use to fomate date of customer reviews.
+
+  ## 01/09/23
+
+  - ## About Us Page Update:
+  - Could not use custom useFetch Hook to make multiple calls for aboutUs content and testimonials.
+    - ### Solution:
+      - Researched and found article on how to use Promise.all() to make multiple fetch calls
+      - Article Source: [Medium](https://medium.com/@jdhawks/make-fetch-s-happen-5022fcc2ddae) - Author Joshua Hawks

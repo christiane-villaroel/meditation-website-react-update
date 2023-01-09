@@ -39,7 +39,9 @@ nav {
 .logo{
   filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
 }
-
+#sitting-meditation{
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
+}
 /* Features Dropdown menu */
 .dropdown-toggle{
   background-color: #b32aa8;
