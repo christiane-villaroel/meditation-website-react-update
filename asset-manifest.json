@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/christiane-villaroel/meditation-website-react-update/static/css/main.242d69b1.css",
+    "main.js": "/christiane-villaroel/meditation-website-react-update/static/js/main.af424041.js",
+    "index.html": "/christiane-villaroel/meditation-website-react-update/index.html",
+    "main.242d69b1.css.map": "/christiane-villaroel/meditation-website-react-update/static/css/main.242d69b1.css.map",
+    "main.af424041.js.map": "/christiane-villaroel/meditation-website-react-update/static/js/main.af424041.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.242d69b1.css",
+    "static/js/main.af424041.js"
+  ]
+}
