@@ -28,16 +28,6 @@ const NavMenu = ()=>{
                         <NavItem>
                             <NavLink to='/about' className="text-white nav-link">About</NavLink>
                         </NavItem>
-                        <UncontrolledDropdown>
-                            <DropdownToggle color="info" className="text-white" caret>
-                                Our Features
-                            </DropdownToggle>
-                            <DropdownMenu >
-                                <DropdownItem>Guided Meditation</DropdownItem>
-                                <DropdownItem>Meditation Music</DropdownItem>
-                                <DropdownItem><NavLink to='timer'>Mediation Timer</NavLink></DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
                         <NavItem>
                             <NavLink to='/contact' className="text-white nav-link">Contact</NavLink>
                         </NavItem>

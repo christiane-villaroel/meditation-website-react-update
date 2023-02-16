@@ -78,3 +78,13 @@ The Secondary goal of this website is to also inform the user about the benefits
     - ### Solution:
       - Researched and found article on how to use Promise.all() to make multiple fetch calls
       - Article Source: [Medium](https://medium.com/@jdhawks/make-fetch-s-happen-5022fcc2ddae) - Author Joshua Hawks
+
+  ## 2/16/23
+
+  - ## Rounter and File Path Updates:
+  - Added gh-pages to host website. Due to this change image file path's needed to be updated from `localhost:3000`
+    to 'http://localhost:3000/christiane-villaroel/meditation-website-react-update/' with the file path to the assets folder appended
+    to the end.
+  - ## Router GH-Pages issue:
+    -- GitHub pages would render a blank page when trying to view website, could not make to connection to react app.
+    -- Solution found on stack overFlow to change React BrowserRouter to HashRouter instead.

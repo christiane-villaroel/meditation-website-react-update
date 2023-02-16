@@ -12,19 +12,19 @@
             {
                 "title":"Guided Meditations",
                 "description":"10 minute Guided Audio & Video Meditation",
-                "img":"http://localhost:3000/assets/images/features/meditation.jpg",
+                "img":"http://localhost:3000/christiane-villaroel/meditation-website-react-update/assets/images/features/meditation.jpg",
                 "id":1
             },
             {
                 "title":"Mediation Music",
                 "description":"Access to Free Music to listen to aid in you're meditation.",
-                "img":"http://localhost:3000/assets/images/features/music-headphones.jpg",
+                "img":"http://localhost:3000/christiane-villaroel/meditation-website-react-update/assets/images/features/music-headphones.jpg",
                 "id":2
             },
             {
                 "title":"Mediation Timer",
                 "description":"A Self paced Meditation Timer that can be adjusted to fit you're busy schedule.",
-                "img":"http://localhost:3000/assets/images/features/timer.jpg",
+                "img":"http://localhost:3000/christiane-villaroel/meditation-website-react-update/assets/images/features/timer.jpg",
                 "id":3
             
             }
@@ -36,13 +36,13 @@
             {
             "title":"Take Time to Be Mindful",
             "description":"Stress and Anxiety play a big role in our every day lives. Take time to relieve that stress",
-            "img":"http://localhost:3000/assets/images/mindfulLogo.svg",
+            "img":"http://localhost:3000/christiane-villaroel/meditation-website-react-update/assets/images/mindfulLogo.svg",
             "id":5
             }
         ]
    }],
    "logo":[{
-    "img":"http://localhost:3000/assets/images/mindfulLogo.svg"
+    "img":"http://localhost:3000/christiane-villaroel/meditation-website-react-update/assets/images/mindfulLogo.svg"
    }],
    "aboutUs": [
     {
@@ -56,7 +56,7 @@
         "review":"Mindful has completely surpassed our expectations. Mindful has got everything I need. We've used Mindful for the last five years. It's just amazing.",
         "author":"Velvet J",
         "date":"Jan 4 2020",
-        "img":"http://localhost:3000/assets/images/sitting-meditation.svg",
+        "img":"http://localhost:3000/christiane-villaroel/meditation-website-react-update/assets/images/sitting-meditation.svg",
         "id":7
     }
 ]
