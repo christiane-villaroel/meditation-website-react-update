@@ -81,10 +81,13 @@ The Secondary goal of this website is to also inform the user about the benefits
 
   ## 2/16/23
 
-  - ## Rounter and File Path Updates:
+  - ## Router and File Path Updates:
   - Added gh-pages to host website. Due to this change image file path's needed to be updated from `localhost:3000`
     to 'http://localhost:3000/christiane-villaroel/meditation-website-react-update/' with the file path to the assets folder appended
     to the end.
   - ## Router GH-Pages issue:
     -- GitHub pages would render a blank page when trying to view website, could not make to connection to react app.
     -- Solution found on stack overFlow to change React BrowserRouter to HashRouter instead.
+    ## UseFetch Update:
+    -- Deleted useTimeout() method to make fetch request load faster
+    -- I used useTimeout to delay the fetch request in order to view the loading component render. However now that this has been hosted on GH-pages, there is no need to still use useTimeout().
