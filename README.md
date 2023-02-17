@@ -91,3 +91,12 @@ The Secondary goal of this website is to also inform the user about the benefits
     ## UseFetch Update:
     -- Deleted useTimeout() method to make fetch request load faster
     -- I used useTimeout to delay the fetch request in order to view the loading component render. However now that this has been hosted on GH-pages, there is no need to still use useTimeout().
+
+  ## 2/17/23
+
+  - ## Hosting JSON Server:
+  - Trying to host json file on GitHub pages. I used JSON Sever to create a fake
+    REST API Locally. However now that I hosted this website on GitHub, the client side of the site can't make fetch requests to JSON Server locally.
+  - Sources used to update repo to make calls to db.json file:
+    - [MyJSONSever](https://my-json-server.typicode.com/)
+    - [DEV](https://dev.to/nikita_guliaev/deploying-create-react-app-with-json-server-as-backend-to-github-3pp9)- Author Nikita Guliaev
