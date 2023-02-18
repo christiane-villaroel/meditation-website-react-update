@@ -97,6 +97,7 @@ The Secondary goal of this website is to also inform the user about the benefits
   - ## Hosting JSON Server:
   - Trying to host json file on GitHub pages. I used JSON Sever to create a fake
     REST API Locally. However now that I hosted this website on GitHub, the client side of the site can't make fetch requests to JSON Server locally.
+  -
   - Sources used to update repo to make calls to db.json file:
     - [MyJSONSever](https://my-json-server.typicode.com/)
     - [DEV](https://dev.to/nikita_guliaev/deploying-create-react-app-with-json-server-as-backend-to-github-3pp9)- Author Nikita Guliaev

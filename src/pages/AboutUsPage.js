@@ -1,7 +1,7 @@
+import { GitHubUrl } from "../baseUrl";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import dateFormat from "dateformat";
-
 import NavMenu from "../components/NavMenu";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
@@ -20,8 +20,8 @@ const AboutUsPage = () =>{
 */
     useEffect(()=>{
         Promise.all([
-            fetch('http://localhost:8000/aboutUs'),
-            fetch('http://localhost:8000/testimonials')
+            fetch( GitHubUrl +'aboutUs'),
+            fetch( GitHubUrl +'testimonials')
         ])
             .then(([resAboutUs,resReviews])=>{
                 if (!resAboutUs.ok || !resReviews.ok){
