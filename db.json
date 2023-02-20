@@ -12,13 +12,13 @@
             {
                 "title":"Guided Meditations",
                 "description":"10 minute Guided Audio & Video Meditation",
-                "img":"`https://github.com/christiane-villaroel/meditation-website-react-update/assets/images/features/meditation.jpg",
+                "img":"`https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/features/meditation.jpg",
                 "id":1
             },
             {
                 "title":"Mediation Music",
                 "description":"Access to Free Music to listen to aid in you're meditation.",
-                "img":"https://github.com/christiane-villaroel/meditation-website-react-update/assets/images/features/music-headphones.jpg",
+                "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/features/music-headphones.jpg",
                 "id":2
             },
             {

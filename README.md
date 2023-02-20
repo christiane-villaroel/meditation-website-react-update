@@ -11,7 +11,7 @@ using HTML, CSS, Bootstrap, JavaScript and some JQuery. The Goal of this project
 
 The Secondary goal of this website is to also inform the user about the benefits of practicing meditation to reduce stess and anxiety.
 
-## Learnin Objectives:
+## Learning Objectives:
 
 - Building an e-commerce website
 - Breaking Down each Page into Separate Components in React
@@ -101,3 +101,11 @@ The Secondary goal of this website is to also inform the user about the benefits
   - Sources used to update repo to make calls to db.json file:
     - [MyJSONSever](https://my-json-server.typicode.com/)
     - [DEV](https://dev.to/nikita_guliaev/deploying-create-react-app-with-json-server-as-backend-to-github-3pp9)- Author Nikita Guliaev
+
+  ## 2/20/23
+
+  - ## Hosting JSON Server Update:
+  - Created a Heroku Account and push project onto Heroku to host JSON server.
+  - baseUrl updated to fetch from Heroku repo instead of github pages repo.
+    - Backend [Server] : Hosted on Heroku
+    - Front End [Client] : Hosted on GitHub

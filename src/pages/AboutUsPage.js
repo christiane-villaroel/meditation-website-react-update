@@ -1,4 +1,4 @@
-import { GitHubUrl } from "../baseUrl";
+import { baseUrl } from "../baseUrl";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import dateFormat from "dateformat";
@@ -20,8 +20,8 @@ const AboutUsPage = () =>{
 */
     useEffect(()=>{
         Promise.all([
-            fetch( GitHubUrl +'aboutUs'),
-            fetch( GitHubUrl +'testimonials')
+            fetch( baseUrl +'aboutUs'),
+            fetch( baseUrl +'testimonials')
         ])
             .then(([resAboutUs,resReviews])=>{
                 if (!resAboutUs.ok || !resReviews.ok){
@@ -59,7 +59,7 @@ const AboutUsPage = () =>{
                     </Row>
                     <Row className="d-flex flex-column justify-content-center align-items-center">
                         <Col className="d-flex justify-content-center" xs="12">
-                            <img src={reviews[0].img} style={{height:90}} className="my-4" id="sitting-meditation"/>
+                            <img src={reviews[0].img} style={{height:90}} className="my-4" id="sitting-meditation"alt="meditation"/>
                         </Col>
                         <Col  md="10">
                            <blockquote className="blockquote">

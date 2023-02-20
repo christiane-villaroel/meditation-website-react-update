@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
-import { GitHubUrl } from "../baseUrl";
+import { baseUrl } from "../baseUrl";
 import useFetch from "../useFetch";
 import Error from "./Error";
 import Loading from "./Loading";
 const NavMenu = ()=>{
-    const {data:logo,error,isLoading} = useFetch(GitHubUrl+`logo`);
+    const {data:logo,error,isLoading} = useFetch(baseUrl+`logo`);
     const [isOpen,setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
