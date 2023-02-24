@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' exact element={<Homepage />}/>
-        <Route path='about' exact element = {<AboutUsPage/>}/>
+        <Route path='about'  element = {<AboutUsPage/>}/>
       </Routes>
       <Footer/>
     </div>
