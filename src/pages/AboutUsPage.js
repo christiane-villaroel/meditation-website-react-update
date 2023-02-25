@@ -45,7 +45,7 @@ const AboutUsPage = () =>{
     return (
         <main>
             <NavMenu/>
-            {error && <Error/>}
+            {error && <Error msg={"About Page Not Found"}/>}
             {isLoading && <Loading/>}
             {datafetched && 
                 <Container className="d-flex flex-column justify-content-between" >

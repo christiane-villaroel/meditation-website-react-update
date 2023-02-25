@@ -109,3 +109,9 @@ The Secondary goal of this website is to also inform the user about the benefits
   - baseUrl updated to fetch from Heroku repo instead of github pages repo.
     - Backend [Server] : Hosted on Heroku
     - Front End [Client] : Hosted on GitHub
+
+## 2/25/23
+
+- ## WebHosting on Heroku:
+- both Backend and FrontEnd will be hosted Heroku
+- Live Link: https://meditation-website-react.herokuapp.com/

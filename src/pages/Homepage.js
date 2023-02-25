@@ -10,9 +10,9 @@ const Homepage = () => {
     return(
         <main>
             <NavMenu/>
-            {error && <Error/>}
             {isLoading && <Loading/>}
-            {features && <FeaturesList features={features}/>}
+            {features && !error ?<FeaturesList features={features}/>
+            :<Error msg={"Homepage Not Found"}/>}
         </main>
     );
 };
