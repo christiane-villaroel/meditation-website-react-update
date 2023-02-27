@@ -1,4 +1,5 @@
-import { Col, Container, Row } from "reactstrap";
+import { NavLink } from "react-router-dom";
+import { Button, Col, Container, Row } from "reactstrap";
 
 const Error = ({msg}) =>{
     
@@ -11,12 +12,11 @@ const Error = ({msg}) =>{
             </Col>
          </Row>
          <Row>
-            <Col>
             <Col className="text-center" >
+               <NavLink to="/" className="text-white nav-link link-primary">Click to Return to Homepage</NavLink>
                <img className="my-4" id="sitting-meditation"
                style={{height:100}}
                src={process.env.PUBLIC_URL + '/assets/images/sitting-meditation.svg'}/>
-            </Col>
             </Col>
          </Row>
       </Container>
