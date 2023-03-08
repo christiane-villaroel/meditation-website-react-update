@@ -115,3 +115,21 @@ The Secondary goal of this website is to also inform the user about the benefits
 - ## WebHosting on Heroku:
 - both Backend and FrontEnd will be hosted Heroku
 - Live Link: https://meditation-website-react.herokuapp.com/
+
+## 3/8/2023
+
+## Difficulties Faced:
+
+- Deployment Issues on Heroku:
+  - After deploying to Heroku the herku link would only loady a blank page. After inspecting the console through chrome dev tools this message appeared onto the console
+    > "Refused to apply style from 'https://meditation-website-react.herokuapp.com/meditation-website-react-update/static/css/main.e0496164.css'  
+    > because its MIME type ('application/json') is not a supported stylesheet MIME type, and strict MIME checking is enabled."
+
+### Solution:
+
+- After search onling and posting to web dev forums, the problem was how the index.html was linked to the minified files for the main.js or css. Instead it was due to an issue with deploying React with Json-Server as the backend database. the Server.js file was not routing heroku to the correct build folder and I needed to install the Express framework and Path modules.
+- Updating the server.js file by importing both modules and making a get function with the file path to the json file as the first parameter, along with the middleware and router.
+- Lastly I had to remove the "homepage" from my package.json file.
+- **Links for solution**:
+  - [stackoverflow](https://stackoverflow.com/questions/63122706/how-to-deploy-reactjs-app-with-json-server)
+  - [stackoverflow](https://stackoverflow.com/questions/61430193/react-uncaught-syntaxerror-unexpected-token-and-manifest-line-1-column)
