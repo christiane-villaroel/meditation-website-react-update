@@ -1,0 +1,63 @@
+{   
+   "homePage":[
+    
+       { "aboutUs": [
+            {
+                "title":"Who We Are?",
+                "description":"Free Minds is a non-profit organization whose primary mission is to provide free resources for every day working people.We believe that practicing meditation everyday can help reduce stress and anxiety and in turn improve overall health.",
+                "id":4
+            }
+        ]}, 
+        {"featureCards": [
+            {
+                "title":"Guided Meditations",
+                "description":"10 minute Guided Audio & Video Meditation",
+                "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/features/meditation.jpg",
+                "id":1
+            },
+            {
+                "title":"Mediation Music",
+                "description":"Access to Free Music to listen to aid in you're meditation.",
+                "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/features/music-headphones.jpg",
+                "id":2
+            },
+            {
+                "title":"Mediation Timer",
+                "description":"A Self paced Meditation Timer that can be adjusted to fit you're busy schedule.",
+                "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/features/timer.jpg",
+                "id":3
+            
+            }
+        ]}
+    
+   ],
+   "headerPage":[{
+        "header":[
+            {
+            "title":"Take Time to Be Mindful",
+            "description":"Stress and Anxiety play a big role in our every day lives. Take time to relieve that stress",
+            "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/mindfulLogo.svg",
+            "id":5
+            }
+        ]
+   }],
+   "logo":[{
+    "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/mindfulLogo.svg"
+   }],
+   "aboutUs": [
+    {
+        "title":"About Us",
+        "description":"Free Minds is a non-profit organization whose primary mission is to provide free resources for every day working people. We believe that practicing meditation everyday can help reduce stress and anxiety and in turn improve overall health. With the help small donations we have been able to aid more peope in gaining access to different meditation resources free of cost.",
+        "id":6
+    }
+    ],
+"testimonials":[
+    {
+        "review":"Mindful has completely surpassed our expectations. Mindful has got everything I need. We've used Mindful for the last five years. It's just amazing.",
+        "author":"Velvet J",
+        "date":"Jan 4 2020",
+        "img":"https://christiane-villaroel.github.io/meditation-website-react-update/assets/images/sitting-meditation.svg",
+        "id":7
+    }
+]
+}
