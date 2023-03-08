@@ -4,7 +4,7 @@ import { Button, Col, Container, Row } from "reactstrap";
 const Error = ({msg}) =>{
     
    return( 
-      <Container>
+      <main className="Container">
          <Row>
             <Col className="text-center">
                <h1 className="display-3">Error 404</h1>
@@ -19,7 +19,7 @@ const Error = ({msg}) =>{
                src={process.env.PUBLIC_URL + '/assets/images/sitting-meditation.svg'}/>
             </Col>
          </Row>
-      </Container>
+      </main>
    )
 }
 
