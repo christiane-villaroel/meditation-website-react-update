@@ -160,4 +160,5 @@ The Secondary goal of this website is to also inform the user about the benefits
 
 - **Links for Solution**:
   - [stackoverflow](https://stackoverflow.com/questions/74145750/npm-start-json-server-in-background)
-  - [bobbyhadz](https://bobbyhadz.com/blog/not-recognized-as-internal-or-external-command-concurrently#update-your-path-environment-variable) -[stackoverflow](https://stackoverflow.com/questions/64570048/how-to-run-node-js-and-react)
+  - [bobbyhadz](https://bobbyhadz.com/blog/not-recognized-as-internal-or-external-command-concurrently#update-your-path-environment-variable)
+  - [stackoverflow](https://stackoverflow.com/questions/64570048/how-to-run-node-js-and-react)
