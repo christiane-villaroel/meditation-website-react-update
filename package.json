@@ -24,7 +24,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "server": "npx json-server --watch data/db.json --port 8000",
+    "mockserver": "json-server --watch data/db.json --port 8000",
     "client": "react-scripts start",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
