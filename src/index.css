@@ -102,6 +102,11 @@ nav {
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
 }
+/* Error Page */
+#homepage-link{
+  text-decoration: underline;
+  font-weight: bold;
+}
 @media screen and (max-width:1200px){
   #cards-container{
       display: flex;

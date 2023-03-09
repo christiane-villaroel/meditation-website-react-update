@@ -20,8 +20,8 @@ const Footer = () =>{
                         {/* Reactstrap Modal Body */}
                         <Modal isOpen={isOpen}onRequestClose={toggleModal}>
                             <ModalHeader className="d-flex flex-column">
-                                {/* ADD LOGO <img src={mindfulLogo} className="logo" alt="logo"/> */}
-                                <h5>Free Minds</h5>
+                                <img src={process.env.PUBLIC_URL + '/assets/images/mindfulLogo.svg'} className="logo" alt="logo"/>
+                                <h5>Mindful</h5>
                             </ModalHeader>
                             <ModalBody>
                                 <Form>

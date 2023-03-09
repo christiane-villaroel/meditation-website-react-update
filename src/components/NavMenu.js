@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, UncontrolledDropdown } from "reactstrap";
-import { baseUrl } from "../baseUrl";
-import useFetch from "../useFetch";
-import Error from "./Error";
-import Loading from "./Loading";
+import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, } from "reactstrap";
+
 const NavMenu = ()=>{
-    const {data:logo,error,isLoading} = useFetch(baseUrl+`logo`);
     const [isOpen,setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
@@ -15,9 +10,7 @@ const NavMenu = ()=>{
         <div>
             <Navbar className="navbar-expand-md">
                 <NavbarBrand className="d-inline-block align-text-center text-white" href="/">
-                    {isLoading&&<Loading/>}
-                    {error && <Error/>}
-                    {logo && <img src={logo[0].img} style={{height:30}} className="me-2 logo" alt="logo"/>}
+                     <img src={process.env.PUBLIC_URL + '/assets/images/mindfulLogo.svg'} style={{height:30}} className="me-2 logo" alt="logo"/>
                     Mindful
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle}/>
