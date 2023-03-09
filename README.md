@@ -131,5 +131,33 @@ The Secondary goal of this website is to also inform the user about the benefits
 - Updating the server.js file by importing both modules and making a get function with the file path to the json file as the first parameter, along with the middleware and router.
 - Lastly I had to remove the "homepage" from my package.json file.
 - **Links for solution**:
+
   - [stackoverflow](https://stackoverflow.com/questions/63122706/how-to-deploy-reactjs-app-with-json-server)
   - [stackoverflow](https://stackoverflow.com/questions/61430193/react-uncaught-syntaxerror-unexpected-token-and-manifest-line-1-column)
+
+  ## 3/9/2023
+
+  ## Difficulties Faced:
+
+  - Running Json-Server[backend] parallel to React-scripts.
+    - Locally I would have to two separate terminals open, one to start the front-end react script, using npm
+      and another to start the back end script, using npx.
+    - However When the site is deployed only the react script is run due to the fact that the scripts command in the package.json file only has "react scripts" in the "start" command.
+
+### Solution:
+
+- Download concurrently to enable multiple commands to run "concurrently"
+- Alter package.json scripts to the following:
+  `"start": "concurrently \"npm run server\" \"npm run client\"",`
+
+  - heroku will then read the start script command and run the command specified in the server and client scripts which are :
+
+  ```
+  "server": "npx json-server --watch data/db.json --port 8000",
+  "client": "react-scripts start"
+
+  ```
+
+- **Links for Solution**:
+  - [stackoverflow](https://stackoverflow.com/questions/74145750/npm-start-json-server-in-background)
+  - [bobbyhadz](https://bobbyhadz.com/blog/not-recognized-as-internal-or-external-command-concurrently#update-your-path-environment-variable) -[stackoverflow](https://stackoverflow.com/questions/64570048/how-to-run-node-js-and-react)
