@@ -24,13 +24,12 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "server": "json-server --watch data/db.json --port 8000",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch data/db.json --port 8000\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy":"http://localhost:8000",
   "eslintConfig": {
     "extends": [
       "react-app",
