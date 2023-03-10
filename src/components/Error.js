@@ -16,7 +16,8 @@ const Error = ({msg}) =>{
                <NavLink to="/" className="text-white nav-link link-primary" id="homepage-link">Click Here to Return to Homepage</NavLink>
                <img className="my-4" id="sitting-meditation"
                style={{height:100}}
-               src={process.env.PUBLIC_URL + '/assets/images/sitting-meditation.svg'}/>
+               src={process.env.PUBLIC_URL + '/assets/images/sitting-meditation.svg'}
+               alt="logo"/>
             </Col>
          </Row>
       </Container>

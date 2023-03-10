@@ -115,6 +115,8 @@ The Secondary goal of this website is to also inform the user about the benefits
 - ## WebHosting on Heroku:
 - both Backend and FrontEnd will be hosted Heroku
 - Live Link: https://meditation-website-react.herokuapp.com/
+  ### Sources for how to Deploy:
+  - [DEV](https://dev.to/yongchanghe/deploy-react-app-with-json-server-on-heroku-59ak)- Author: Yongchang He
 
 ## 3/8/2023
 
@@ -153,8 +155,8 @@ The Secondary goal of this website is to also inform the user about the benefits
   - heroku will then read the start script command and run the command specified in the server and client scripts which are :
 
   ```
-  "server": "npx json-server --watch data/db.json --port 8000",
-  "client": "react-scripts start"
+  "server": " npx json-server --watch data/db.json --port 8000",
+  "client": "react-scripts start",
 
   ```
 
