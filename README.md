@@ -165,3 +165,10 @@ The Secondary goal of this website is to also inform the user about the benefits
   - [bobbyhadz](https://bobbyhadz.com/blog/not-recognized-as-internal-or-external-command-concurrently#update-your-path-environment-variable)
   - [stackoverflow](https://stackoverflow.com/questions/64570048/how-to-run-node-js-and-react)
   - [npm](https://www.npmjs.com/package/concurrently)
+
+```
+"server": " npx json-server --watch data/db.json --port 8000",
+"client": "react-scripts start",
+"start": "concurrently \"npm run server\" \"npm run client\"",
+
+```
