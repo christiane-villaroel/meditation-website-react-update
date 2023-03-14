@@ -172,3 +172,17 @@ The Secondary goal of this website is to also inform the user about the benefits
 "start": "concurrently \"npm run server\" \"npm run client\"",
 
 ```
+
+## 3/14/2023
+
+## Changes to Package.json Scripts:
+
+```
+  "start": "npm run dev",
+  "client": "react-scripts start",
+```
+
+```
+  "server": "json-server  --watch data/db.json --port 8000",
+  "dev": "concurrently \"npm run client\" \"npm run server\""
+```
