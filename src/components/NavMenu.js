@@ -20,6 +20,9 @@ const NavMenu = ()=>{
                             <NavLink to={'/'} className="text-white nav-link">Home</NavLink>
                         </NavItem>
                         <NavItem>
+                            <NavLink to='/meditate'className="text-white nav-link">Meditate</NavLink>
+                        </NavItem>
+                        <NavItem>
                             <NavLink to='/about' className="text-white nav-link">About</NavLink>
                         </NavItem>
                         <NavItem>

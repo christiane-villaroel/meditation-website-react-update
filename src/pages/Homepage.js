@@ -1,7 +1,7 @@
 import { baseUrl } from "../baseUrl";
 import NavMenu from "../components/NavMenu";
 import FeaturesList from "../features/FeaturesList/FeaturesList";
-import useFetch from "../useFetch";
+import useFetch from "../hooks/useFetch";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
 

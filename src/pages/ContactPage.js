@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Input,Form,FormGroup, Label, Container, Row, Col, Button } from "reactstrap";
+import { Input,Form,FormGroup, Label, Row, Col, Button } from "reactstrap";
 import NavMenu from "../components/NavMenu";
 
-const ContactForm = () => {
+const ContactPage = () => {
     const [firstName,setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -19,7 +19,7 @@ const ContactForm = () => {
     return (
         <main className="formpage-container">
             <NavMenu/>
-            <h1 className="text-center">Contact Us</h1>
+            <h1 className="text-center display-3">Contact Us</h1>
             <Form className="container" onSubmit={handleSubmit}>
                 <Row className="justify-content-center">
                     <FormGroup className="col-3">
@@ -80,4 +80,4 @@ const ContactForm = () => {
     )
 };
 
-export default ContactForm;
+export default ContactPage;

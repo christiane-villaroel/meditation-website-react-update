@@ -186,3 +186,20 @@ The Secondary goal of this website is to also inform the user about the benefits
   "server": "json-server  --watch data/db.json --port 8000",
   "dev": "concurrently \"npm run client\" \"npm run server\""
 ```
+
+## 3/18/2023
+
+## Issues:
+
+When deployed site to heroku, React App would start however json-server would not run on when running locally.
+
+## Temporary Solution:
+
+Changing baseURL to [meditation-project-server-heroku](https://meditation-project-server.herokuapp.com/) which is a completelu separate heroku repo hosting only the backend data.
+
+- Locally I will run `npm run dev` and for deployment I will make fetch calls to the backend server hosted on heroku.
+
+## Folder File Structure:
+
+Updating `src` folder structure based on web dev simplified article.
+[web dev simplified](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
