@@ -203,3 +203,20 @@ Changing baseURL to [meditation-project-server-heroku](https://meditation-projec
 
 Updating `src` folder structure based on web dev simplified article.
 [web dev simplified](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
+
+## Custom Hook: usePromise:
+
+Creating a custom hook file that uses `Promise.all` to make multiple fetch calls to heroku in
+situations where a webpage needs to make multiple calls to difference end points
+
+## 3/21/2023
+
+## Fetch Updates and Router update
+
+- separated usePromise fetch code body into separate file and it is now a custom Hook component. I can now make two fetch calls by calling `usePromise()` after importing it, and adding the two endpoints from which I would like to retrieve data from.
+
+### FeatureCards:
+
+- `FeatureCards.js` is a copy of `FeatureList.js` however in order to make this component more reusable, once the props is passed, I am using the JavaScript `Object.values()` to avoid having to type the name of the key.
+
+- For future Updates I would like to have `FeatureCards.js` be used for both `Hompage.js` and Meditate.js in order to keep this project more DRY.

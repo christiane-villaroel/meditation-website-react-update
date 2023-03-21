@@ -1,12 +1,13 @@
 import { baseUrl } from "../baseUrl";
 import NavMenu from "../components/NavMenu";
-import FeaturesList from "../features/FeaturesList/FeaturesList";
 import useFetch from "../hooks/useFetch";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
+import FeaturesList from "../features/FeaturesList/FeaturesList";
 
 const Homepage = () => {
     const {data:features,error,isLoading} = useFetch(baseUrl + `homePage`);
+
     return(
         <main>
             <NavMenu/>
